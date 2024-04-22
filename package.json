@@ -1,0 +1,15 @@
+{
+  "name": "rubric-generator",
+  "version": "1.0.0",
+  "description": "this app is intended to read project documentation and generate a suitable grading rubric",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
