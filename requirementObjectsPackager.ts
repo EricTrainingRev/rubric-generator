@@ -23,7 +23,6 @@ export function breakStrings(monolithicData: string[]): IRequirementCollection{
         }
         index++;
     }
-    console.log({ epics, descriptions, requirements });
     return {epics, descriptions, requirements};
 }
 

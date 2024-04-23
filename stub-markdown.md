@@ -13,8 +13,6 @@ description of requirement collection
 - requirement two
 
 ## Software Requirements
-another description
 - requirement one
-
 more descriptions
 - requirement one

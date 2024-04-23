@@ -34,7 +34,8 @@ try {
       // save requirement data into requirementData array
       requirementData = organizeRequirements(brokenDownRequirements);
 
-      
+      // TODO: craft html content with requirement data and return it to user
+
     })();  
 } catch (error) {
   console.log(error);
