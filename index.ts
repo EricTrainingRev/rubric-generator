@@ -33,11 +33,8 @@ try {
 
       // save requirement data into requirementData array
       requirementData = organizeRequirements(brokenDownRequirements);
-      
-      requirementData.forEach(r =>{
-        console.log(r.epic.descriptions[0]);
-      });
 
+      
     })();  
 } catch (error) {
   console.log(error);

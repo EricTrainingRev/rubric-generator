@@ -10,15 +10,17 @@ export interface IFileLoader {
 export interface IRequirementsHolder {
   epic: {
     name: string;
-    descriptions: {
-      description: string;
-      requirements: string[];
-    }[];
+    descriptions: IDescriptionsHolder[];
   };
+}
+
+export interface IDescriptionsHolder{
+  description: string;
+  requirements: string[];
 }
 
 export interface IRequirementCollection{
     epics: string[];
     descriptions: [number, string][];
-    requirements: [number, string][]
+    requirements: [number, number, string][]
 }
