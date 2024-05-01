@@ -1,6 +1,5 @@
 import { IRequirementsHolder } from "./interfaces"; 
 
-//TODO: seeing how much of this can be handled in the rubric file instead of here
 
 const template = 
 `<!DOCTYPE html>
@@ -178,4 +177,6 @@ const template =
 </script>
 </html>`;
 
-console.log(template);
+export function addRequirementDataToHTML(requirementData: IRequirementsHolder[]) {
+    return template.replace("?", JSON.stringify(requirementData));
+}
