@@ -24,6 +24,19 @@ more descriptions or notes
 
 This application was designed with a project document that has all data included in a markdown file.
 
+# How To Use
+You need to provide the markdown file that has the requirements you want graded when starting the application. By default the application assumes requirements that are labeled with a Level 2 header should be included in the rubric. If you are using a different identifier then you need to provide it after the path to the requirements document. Note the examples below assume you have ts-node installed globally.
+
+Example command using default identifier and markdown in the resources directory
+```bash
+ts-node index.ts resources/example-markdown-default.md
+```
+
+Example command using custom identifier and markdown in the resources directory
+```bash
+ts-node index.ts resources/example-markdown-adjusted.md "#### "
+```
+
 # TODO
 - Update HTML template to be project agnostic (currently title and styling are set for hard-coded JWA P0 project)
 - Index code is currently all wrapped in a self-invoking function: decoupling the code to make future adjustments easier would be ideal
